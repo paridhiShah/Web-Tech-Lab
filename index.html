@@ -12,7 +12,7 @@
     <div class="navbar">
         <ul>
             <li><a href="#home">Home</a></li>
-            <li><a href="#confi">Configuration</a></li>
+            <li><a href="#about">About Us</a></li>
             <li><a href="#inven">Inventory</a></li>
             <li>Tools</li>
             <li>Report</li>
@@ -21,14 +21,111 @@
             <li><i class="fa fa-search right" aria-hidden="true"></i></li>
         </ul>
     </div>
-    <div>
+    <div id="home">
         <h1>Home</h1>
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 3</div>
+              <img src="assests/bg3.jpg" style="width:100%">
+              <div class="text">Caption Text</div>
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 3</div>
+              <img src="assests/bg2.jpg" style="width:100%">
+              <div class="text">Caption Two</div>
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 3</div>
+              <img src="assests/bg1.jpg" style="width:100%">
+              <div class="text">Caption Three</div>
+            </div>
+            
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            
+            </div>
+            <br>
+            
+            <div style="text-align:center">
+              <span class="dot" onclick="currentSlide(1)"></span> 
+              <span class="dot" onclick="currentSlide(2)"></span> 
+              <span class="dot" onclick="currentSlide(3)"></span> 
+            </div>
+            
+            <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+            
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+            
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+              var i;
+              var slides = document.getElementsByClassName("mySlides");
+              var dots = document.getElementsByClassName("dot");
+              if (n > slides.length) {slideIndex = 1}    
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                  slides[i].style.display = "none";  
+              }
+              for (i = 0; i < dots.length; i++) {
+                  dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+            }
+            </script>
+            
        <div class="container">
+           <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis optio earum in sed dignissimos, eligendi ullam temporibus ipsa sequi, commodi vero at corrupti hic, maxime sit inventore. Facilis, inventore exercitationem.</p>
+           <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis optio earum in sed dignissimos, eligendi ullam temporibus ipsa sequi, commodi vero at corrupti hic, maxime sit inventore. Facilis, inventore exercitationem.</p>
+           <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis optio earum in sed dignissimos, eligendi ullam temporibus ipsa sequi, commodi vero at corrupti hic, maxime sit inventore. Facilis, inventore exercitationem.</p>
+       </div>
+       
+    </div>  
+    <div id="about">
+        <h1>Company Information</h1>
+       <div class="container">
+        <hr>
            <p>This is a web portal of 2047140 Computers Sales Private Limited, a young and vibrant company that aims to provide good quality branded IT products online.
                2047140 is one of the leading IT distribution companies in Bengalore operating since its inception in 2003. The company is heading to provide full range of PC components to local customers through its wide sales channels.
                To provide customers superior quality and well-known brand products with best support & excellent after sale services are company’s motto. Currently 2047140 is acting as the authorized dealer for some global leading brands e.g. AMD, Antec, ASUS, Blackmagic Design, Cooler Master, Corsair, Circle, MSI, Sapphire, ZOTAC for West-Bengal market.</p>
 
        </div>
+       <div class="container">
+           <h3>Our Values</h3>
+        <hr>   
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, eligendi, placeat magni maiores hic ratione laborum rerum quas numquam quasi, illum eum. Aliquam quibusdam nostrum minus soluta dolorum esse quisquam?</p>
+       </div>
+
+
+       <div class="container">
+            <div class="grid-container">
+                <div class="grid-item">
+                    <h3>Customer Service</h3>
+                    <hr>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique doloribus amet perspiciatis vero temporibus iure! Aliquid commodi similique deserunt quos atque nemo minima eligendi, doloribus</p>
+                </div>
+                <div class="grid-item">
+                    <h3>Award Winning</h3>
+                    <hr>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique doloribus amet perspiciatis vero temporibus iure! Aliquid commodi similique deserunt quos atque nemo minima eligendi, doloribus</p>
+                    
+                </div>
+                
+                    
+            </div>
+       </div>
+
+
     </div>    
     <div id="inven">
         <h1>Inventory</h1>
@@ -48,5 +145,46 @@
         </div>
     </div>
    
+    <div class="container">
+        <h2>Contact Us</h2>
+        <p><emp>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim eveniet odio voluptatem perspiciatis porro dolor sint voluptates, aliquid rerum neque adipisci quos totam illo</emp></p>
+        <br>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem nemo eius aliquid tenetur consectetur saepe, velit sed dignissimos qui. Reiciendis, vitae natus quis odit </p>
+
+        <div>
+            <form>
+                <div class="form">
+                    <label for="Cname">Company:</label>
+                    <input type="text" id="Cname" name="Cname">
+                </div>
+
+                <div class="form">
+                    <label for="Fname">Full Name:</label>
+                    <input type="text" id="Fname" name="Fname">
+                </div>
+
+                <div class="form">
+                    <label for="Address">Address</Address>:</label>
+                    <input type="text" id="Address" name="Address">
+                </div>
+                
+                <div class="form">
+                    <label for="Email">Email:</label>
+                    <input type="email" id="email" name="email">
+                </div>
+
+                <div class="form">
+                    <label for="phonoNo">Phone:</label>
+                    <input type="number" id="PhoneNo" name="phonoNo">
+                </div>
+
+                <div class="form">
+                    <label for="ques">Questions/Comments:</label>
+                    <input type="textarea" id="ques" name="ques">
+                </div>
+              </form>
+        </div>
+
+    </div>
 </body>
 </html>
