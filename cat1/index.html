@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOURISM INFORMATION</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <ul>
+            <li><a href="#home">Places to Visit</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#inven">Nearby Terks/Camps</a></li>
+            <li><a href="#contact">Hotels</a></li>
+            <li><a href="#prod">How to Reach</a></li>
+            <li><a href="#map">Map</a></li>
+            <li><a href="#prod">Photos</a></li>
+            <li><i class="fa fa-sign-in right" aria-hidden="true"></i></li>
+        </ul>
+    </div>
+    <div id="home">
+        <div class="container">
+            <h1>Places to Visit In Bangalore</h1>
+            <hr>
+        </div>
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 3</div>
+                <img src="assests/1.jpg" style="width:100%">
+                <div class="text">Vidhan Sabha</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 3</div>
+                <img src="assests/2.jpg" style="width:100%">
+                <div class="text">Antaragange</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                <img src="assests/3.jpg" style="width:100%">
+                <div class="text">Lal Bagh Botanical Garden</div>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        </div>
+        <br>
+
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+
+        <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("dot");
+                if (n > slides.length) { slideIndex = 1 }
+                if (n < 1) { slideIndex = slides.length }
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " active";
+            }
+        </script>
+
+        <div class="container">
+            <p>Lal Bagh Botanical Garden, Brigade Road, Bannerghatta National Park, Nandi Hills, Cubbon Park, Bangalore
+                Palace, Vidhana Soudha, Ramanagra, Kanakpura, Skandagiri, Snow City, Tipu Sultan's Summer Palace, Iskcon
+                Temple, Lumbini Gardens, Devanahalli Fort, Bangalore Fort, MG Road, Commercial Street and many more
+                exciting places</p>
+            <p>The various tourist places to in Bangalore make this capital city of Karnataka one of the most happening
+                ones in southern India with a variety of experiences. This Silicon Valley city is a sparkly blend of
+                plentiful genres like adventure, architecture, relaxation in the outskirts and sprawling night-life in
+                the city. Some of these entertaining getaways to unwind from a busy week at work are just within an
+                hour’s drive from the city, making it more convenient to plan a trip.</p>
+            <p>Bangalore has the perfect blend of various historical places, traditions, different cultures,
+                modernization, the colourful gardens, and the pleasant climate adds a flavour for the tourist to visit.
+                Bangalore has everything for a taste of all kinds of people, be it young or old, you are sure to get
+                your corner of interest in this booming city.</p>
+            <p>Some of the places to see in Bangalore that are worth visiting are Kanakapura, Nandi Hills, Ramanagara,
+                Wonderla and Snow City where you can spend an entire day playing indoor and outdoor games with a large
+                group. For those who are looking for an amazing night, must head to Hard Rock Café, Big Brewsky, Toit or
+                to the highest pub in Bangalore, Skyye Ultra Lounge. Taking a trekking day off at adventure places like
+                Skandagiri, Kunti Betta or Anthargange which are the ‘must-try’ when in this refreshing city.</p>
+        </div>
+
+    </div>
+
+    <div id="inven">
+        <div class="container">
+
+            <h1>Handpicked treks and camps around Bangalore</h1>
+            <hr>
+            <div class="flex-container">
+                <div class="flex-item-left">
+                    <div class="card">
+                        <a href="https://www.thrillophilia.com/tours/q-mango-forest-adventure-camp">
+                            <img src="assests/nandi_hills.jpg" alt="Nandi Hills Drive In Camp" style="width:100%">
+                            <div class="containerC">
+                                <h6><b>Nandi Hills Drive In Camp</b></h6>
+                                <p>₹ 1,299 per Adult</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="flex-item-right">
+                    <div class="card">
+                        <a href="https://www.thrillophilia.com/tours/q-mango-forest-adventure-camp">
+                            <img src="assests/Qmango.jpg" alt="Q Mango Forest Adventure Camp" style="width:100%">
+                            <div class="containerC">
+                                <h6><b>Q Mango Forest Adventure Camp</b></h6>
+                                <p>₹ 1,299 per Adult</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="flex-item-right">
+                    <div class="card">
+                        <a href="https://www.thrillophilia.com/tours/q-mango-forest-adventure-camp">
+                            <img src="assests/lakeside.jpg" alt="Lakeside Camping in Kanva" style="width:100%">
+                            <div class="containerC">
+                                <h6><b>Lakeside Camping in Kanva</b></h6>
+                                <p>₹ 1,299 per Adult</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="flex-item-right">
+                    <div class="card">
+                        <a href="https://www.thrillophilia.com/tours/q-mango-forest-adventure-camp">
+                            <img src="assests/ramanagara.jpg" alt="Ramanagara Adventure Camp" style="width:100%">
+                            <div class="containerC">
+                                <h6><b>Ramanagara Adventure Camp</b></h6>
+                                <p>₹ 1,299 per Adult</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <!-- <table>
+                <tr>
+                    <td><a><img src="assests/1.jpg" alt="product 1" width="350" height="300"></a></td>
+                    <td><a><img src="assests/2.jpg" alt="product 1" width="350" height="300"></a></td>
+                    <td><a><img src="assests/3.jpg" alt="product 1" width="350" height="300"></a></td>
+                </tr>
+                <tr>
+                    <td><a><img src="assests/4.jpg" alt="product 1" width="350" height="300"></a></td>
+                    <td><a><img src="assests/5.jpg" alt="product 1" width="350" height="300"></a></td>
+                    <td><a><img src="assests/6.jpg" alt="product 1" width="350" height="300"></a></td>
+                </tr>
+            </table> -->
+        </div>
+    </div>
+
+    <div id="inven">
+        <div class="container">
+            <br>
+            <h1>How to Reach Bangalore</h1>
+            <hr>
+            <p>Bangalore is well connected to all parts of the country by air, road and rail. The Bengaluru
+                International Airport is located in Devanahalli, 40kms from the city, which is accessible through buses,
+                taxis and helicopters. The Bengaluru City Railway Station and Yeshwantpur Junction are the major railway
+                terminals where most trains arrive. Government and private bus services are also available to and from
+                major Indian cities.</p>
+            <h4>Most frequently searched routes to Bangalore</h4>
+            <br>
+            <table>
+                <tr>
+                    <th>Route Name</th>
+                    <th>Distance</th>
+                    <th>Time</th>
+                    <th>More Information</th>
+                </tr>
+                <tr>
+                    <td>Hyderabad to Bangalore</td>
+                    <td>569 km</td>
+                    <td>8 hours 1 min</td>
+                    <td><a href="https://www.makemytrip.com/">View Details</a></td>
+                </tr>
+                <tr>
+                    <td>Mumbai to Bangalore</td>
+                    <td>980 km</td>
+                    <td>8 hours 1 min</td>
+                    <td><a href="https://www.makemytrip.com/">View Details</a></td>
+                </tr>
+                <tr>
+                    <td>Delhi to Bangalore</td>
+                    <td>2,167 km</td>
+                    <td>1 day 7 hours</td>
+                    <td><a href="https://www.makemytrip.com/">View Details</a></td>
+                </tr>
+                <tr>
+                    <td>Hyderabad to Bangalore</td>
+                    <td>569 km</td>
+                    <td>8 hours 1 min</td>
+                    <td><a href="https://www.makemytrip.com/">View Details</a></td>
+                </tr>
+                <tr>
+                    <td>Mumbai to Bangalore</td>
+                    <td>980 km</td>
+                    <td>8 hours 1 min</td>
+                    <td><a href="https://www.makemytrip.com/">View Details</a></td>
+                </tr>
+                <tr>
+                    <td>Delhi to Bangalore</td>
+                    <td>2,167 km</td>
+                    <td>1 day 7 hours</td>
+                    <td><a href="https://www.makemytrip.com/">View Details</a></td>
+                </tr>
+
+            </table>
+            <br>
+        </div>
+    </div>
+
+    <div id="map">
+        <div class="container">
+            <br>
+            <h1>Top 10 Places in Bangalore</h1>
+            <hr>
+            <br>
+
+            <img src="assests/top.jpg" alt="Top 10 Places" usemap="#workmap" width="230" height="200" >
+
+            <map name="workmap">
+                <area shape="rect" coords="34,44,200,300" alt=" Thottikallu Falls" href="https://en.wikipedia.org/wiki/Thottikallu">
+                <area shape="rect" coords="50,145,270,350" alt="Phone" href="https://www.google.com/search?q=temples%20in%20bangalore&rlz=1C1CHBH_enIN862IN862&sxsrf=AOaemvKQkV3t5j115e1psYJR5rTqHVxi4A:1630490882287&ei=iFAvYdm-KKfdz7sPyrKheA&oq=tem&gs_lcp=Cgdnd3Mtd2l6EAMYATIHCAAQsQMQQzIECAAQQzIECAAQQzIECAAQQzIECAAQQzIECAAQQzIECAAQQzIKCC4QxwEQrwEQQzIHCAAQsQMQQzIECAAQQzoECCMQJzoLCAAQgAQQsQMQgwE6EQguEIAEELEDEIMBEMcBENEDOgUIABCABDoLCC4QxwEQrwEQkQJKBAhBGABQnJkHWIucB2CZqQdoAHACeACAAbgBiAHfA5IBAzAuM5gBAKABAcABAQ&sclient=gws-wiz&tbs=lf:1,lf_ui:1&tbm=lcl&rflfq=1&num=10&rldimm=11003649972418471702&lqi=ChR0ZW1wbGVzIGluIGJhbmdhbG9yZUij3aEEWiIQABgAGAIiFHRlbXBsZXMgaW4gYmFuZ2Fsb3JlKgQIAxAAkgEMaGluZHVfdGVtcGxlqgEPEAEqCyIHdGVtcGxlcygA&phdesc=VCmG0jbC3yM&ved=2ahUKEwiZ--Puw93yAhVy7nMBHaPjCXEQvS4wAHoECAYQMw&rlst=f#rlfi=hd:;si:11003649972418471702,l,ChR0ZW1wbGVzIGluIGJhbmdhbG9yZUij3aEEWiIQABgAGAIiFHRlbXBsZXMgaW4gYmFuZ2Fsb3JlKgQIAxAAkgEMaGluZHVfdGVtcGxlqgEPEAEqCyIHdGVtcGxlcygA,y,VCmG0jbC3yM;mv:[[13.0178193,77.66418639999999],[12.868737600000001,77.521286]];tbs:lrf:!1m4!1u3!2m2!3m1!1e1!1m4!1u2!2m2!2m1!1e1!1m4!1u16!2m2!16m1!1e1!1m4!1u16!2m2!16m1!1e2!2m1!1e2!2m1!1e16!2m1!1e3!3sIAE,lf:1,lf_ui:1">
+    
+            </map>
+            <br>
+            <hr>
+        </div>
+    </div>
+
+
+    <div id="about">
+        <div class="container">
+            <h1>Company Information</h1>
+            <hr>
+            <p>This is a web portal of 2047140 Computers Sales Private Limited, a young and vibrant company that aims to
+                provide good quality branded IT products online.
+                2047140 is one of the leading IT distribution companies in Bengalore operating since its inception in
+                2003. The
+                company is heading to provide full range of PC components to local customers through its wide sales
+                channels.
+                To provide customers superior quality and well-known brand products with best support & excellent after
+                sale
+                services are company’s motto. Currently 2047140 is acting as the authorized dealer for some global
+                leading
+                brands e.g. AMD, Antec, ASUS, Blackmagic Design, Cooler Master, Corsair, Circle, MSI, Sapphire, ZOTAC
+                for
+                West-Bengal market.</p>
+
+        </div>
+        <div class="container">
+            <h3>Our Values</h3>
+            <hr>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, eligendi, placeat magni maiores hic
+                ratione
+                laborum rerum quas numquam quasi, illum eum. Aliquam quibusdam nostrum minus soluta dolorum esse
+                quisquam?</p>
+        </div>
+
+
+        <div class="container">
+            <div class="grid-container">
+                <div class="grid-item">
+                    <h3>Customer Service</h3>
+                    <hr>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique doloribus amet perspiciatis
+                        vero
+                        temporibus iure! Aliquid commodi similique deserunt quos atque nemo minima eligendi, doloribus
+                    </p>
+                </div>
+                <div class="grid-item">
+                    <h3>Award Winning</h3>
+                    <hr>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique doloribus amet perspiciatis
+                        vero
+                        temporibus iure! Aliquid commodi similique deserunt quos atque nemo minima eligendi, doloribus
+                    </p>
+
+                </div>
+
+
+            </div>
+        </div>
+
+
+    </div>
+    <div id="contact" class="container">
+
+        <h2>Contact Us</h2>
+        <hr>
+        <p>
+            <emp>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim eveniet odio voluptatem perspiciatis
+                porro
+                dolor sint voluptates, aliquid rerum neque adipisci quos totam illo</emp>
+        </p>
+        <form>
+            <div class="mb-3">
+                <label for="Company" class="form-label">Company</label>
+                <input type="text" class="form-control" id="Company">
+            </div>
+            <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name" aria-describedby="nameHelp">
+                <div id="nameHelp" class="form-text">Please enter your Full Name</div>
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-3">
+                <label for="pNumber" class="form-label">Contact Number</label>
+                <input type="number" class="form-control" id="pNumber">
+            </div>
+            <div class="mb-3">
+                <label for="Question" class="form-label">Question/Comment</label>
+                <textarea class="form-control" id="Question"></textarea>
+            </div>
+            <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1" onclick="myFunction()">
+                <label class="form-check-label" for="exampleCheck1">Do you want us to give notification!</label>
+            </div>
+            <script>
+                function myFunction() {
+                    alert("Are you sure?");
+                }
+            </script>
+
+            <div>
+                <p>Click the button to get your coordinates.</p>
+
+                <button onclick="getLocation()">Try It</button>
+
+                <p id="demo"></p>
+
+                <script>
+                    var x = document.getElementById("demo");
+
+                    function getLocation() {
+                        if (navigator.geolocation) {
+                            navigator.geolocation.getCurrentPosition(showPosition);
+                        } else {
+                            x.innerHTML = "Geolocation is not supported by this browser.";
+                        }
+                    }
+
+                    function showPosition(position) {
+                        x.innerHTML = "Latitude: " + position.coords.latitude +
+                            "<br>Longitude: " + position.coords.longitude;
+                    }
+                </script>
+            </div>
+            <button id="button" class="btn btn-primary">Submit</button>
+            <div id="iframeHolder"></div>
+        </form>
+    </div>
+    <br>
+    <div id="prod">
+        <div class="container">
+
+            <h1>YouTube Blogs</h1>
+            <hr>
+            <table>
+                <tr>
+                    <td><iframe width="350" height="300" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe></td>
+                    <td><iframe width="350" height="300" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe></td>
+                    <td><iframe width="350" height="300" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe></td>
+                </tr>
+                <tr>
+                    <td><object data="assests/v.mp4" width="350" height="300"></object>
+                    </td>
+                    <td><video controls autoplay controls width="350" height="300">
+                            <source src="assests/v.mp4" type="video/mp4">
+                    </td>
+                    <td><video controls width="350" height="300">
+                            <source src="assests/v.mp4" type="video/mp4">
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+    </div>
+</body>
+
+</html>
