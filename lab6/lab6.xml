@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="lab6xsl.xsl" ?>
+<!DOCTYPE Homepage SYSTEM "lab6dtd.dtd">
+<Homepage>
+<ProductsList>
+  <Product>
+    <Image>1.jpg</Image>
+    <Code>2941</Code>
+    <StockQty>65</StockQty>
+    <Price>1500</Price>
+    <AddtoCartButton>Add to Cart</AddtoCartButton>
+    <BuyButton>Buy Now</BuyButton>
+  </Product>
+  <Product>
+    <Image>2.jpg</Image>
+    <Code>2941</Code>
+    <StockQty>65</StockQty>
+    <Price>1500</Price>
+    <AddtoCartButton>Add to Cart</AddtoCartButton>
+    <BuyButton>Buy Now</BuyButton>
+  </Product>
+  <Product>
+    <Image>3.jpg</Image>
+    <Code>2942</Code>
+    <StockQty>68</StockQty>
+    <Price>2500</Price>
+    <AddtoCartButton>Add to Cart</AddtoCartButton>
+    <BuyButton>Buy Now</BuyButton>
+  </Product>
+  <Product>
+    <Image>4.jpg</Image>
+    <Code>2943</Code>
+    <StockQty>85</StockQty>
+    <Price>500</Price>
+    <AddtoCartButton>Add to Cart</AddtoCartButton>
+    <BuyButton>Buy Now</BuyButton>
+  </Product>
+  <Product>
+    <Image>5.jpg</Image>
+    <Code>2944</Code>
+    <StockQty>86</StockQty>
+    <Price>1580</Price>
+    <AddtoCartButton>Add to Cart</AddtoCartButton>
+    <BuyButton>Buy Now</BuyButton>
+  </Product>
+</ProductsList>
+</Homepage>

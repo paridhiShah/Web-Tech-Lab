@@ -29,6 +29,9 @@ padding-right: 0.5vmax;
     cursor: pointer;
 }
 
+.navbar li a:visited{
+  color: rgb(102, 8, 8);
+}
 
 
 .container{
@@ -162,4 +165,23 @@ img {vertical-align: middle;}
 
 #iframeHolder{
   padding-left: 20%;
+}
+
+.background {
+  background-color: rgb(179, 54, 79);
+}
+
+.transbox {
+  margin-top: 10%;
+  margin-left: 30%;
+  margin-right:30% ;
+  background-color: #fdc9c9;
+  border: 1px solid rgb(153, 6, 6);
+  opacity: 0.6;
+}
+
+.transbox p {
+  margin-left: 40%;
+  font-weight: bold;
+  color: #000000;
 }

@@ -9,6 +9,7 @@
 .navbar{
     padding: 0.5vmax;
     background-color: rgb(179, 54, 79);
+    position: fixed;
 }
 
 .navbar li a{
@@ -29,6 +30,10 @@ padding-right: 0.5vmax;
 .navbar li a:hover{
     color: rgb(102, 8, 8);
     cursor: pointer;
+}
+
+a:visited{
+  color:rgb(102, 8, 8) ;
 }
 
 .card {

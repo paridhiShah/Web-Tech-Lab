@@ -1,0 +1,9 @@
+<!ELEMENT Homepage (ProductsList)>
+<!ELEMENT ProductsList (Product+)>
+<!ELEMENT Product (Image, Code, StockQty, Price, AddtoCartButton, BuyButton)>
+<!ELEMENT Code (#PCDATA)>
+<!ELEMENT StockQty (#PCDATA)>
+<!ELEMENT Price (#PCDATA)>
+<!ELEMENT AddtoCartButton (#PCDATA)>
+<!ELEMENT BuyButton (#PCDATA)>
+<!ELEMENT Image (#PCDATA)>
