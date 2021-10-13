@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<?DOCTYPE note
+[
+<!ELEMENT note (STU-NAME,STU-BRANCH,STU-COLLEGE,STU-EMAIL)>
+<!ELEMENT STU-NAME (#PCDATA)>
+<!ELEMENT STU-BRANCH (#PCDATA)>
+<!ELEMENT STU-COLLEGE (#PCDATA)>
+<!ELEMENT STU-EMAIL (#PCDATA)>
+]?>
+<?xml-stylesheet type="text/xsl" href="Rules.xsl" ?>
+<CHRIST>
+<CS>
+<STU-NAME>Paridhi Shah</STU-NAME>
+<STU-BRANCH>CS</STU-BRANCH>
+<STU-COLLEGE> Christ University </STU-COLLEGE>
+<STU-EMAIL> 99parishah@gmail.com </STU-EMAIL>
+</CS>
+<CS>
+<STU-NAME> Aniket Chauhan </STU-NAME>
+<STU-BRANCH> CME</STU-BRANCH>
+<STU-COLLEGE> Christ University </STU-COLLEGE>
+<STU-EMAIL> aniket123@gmail.com </STU-EMAIL>
+</CS>
+<CS>
+<STU-NAME> Harjot Kaur Chawla</STU-NAME>
+<STU-BRANCH> CS</STU-BRANCH>
+<STU-COLLEGE> Delhi University</STU-COLLEGE>
+<STU-EMAIL> harjot@gmail.com </STU-EMAIL>
+</CS>
+<CS>
+<STU-NAME> Rohan Jain</STU-NAME>
+<STU-BRANCH>CMS</STU-BRANCH>
+<STU-COLLEGE> Deen Dayal Upadhya</STU-COLLEGE>
+<STU-EMAIL> jainrohan@gmail.com </STU-EMAIL>
+</CS>
+<CS>
+<STU-NAME> Mansi Bhatia</STU-NAME>
+<STU-BRANCH>Mechanical</STU-BRANCH>
+<STU-COLLEGE>IP University</STU-COLLEGE>
+<STU-EMAIL> mansi@gmail.com</STU-EMAIL>
+</CS>
+<CS>
+<STU-NAME> Annanya Pandey</STU-NAME>
+<STU-BRANCH>Chemical</STU-BRANCH>
+<STU-COLLEGE>Bits</STU-COLLEGE>
+<STU-EMAIL>pandeyannaya@gmail.com</STU-EMAIL>
+</CS>
+<CS>
+<STU-NAME>Niharika Malviya</STU-NAME>
+<STU-BRANCH>Electrical</STU-BRANCH>
+<STU-COLLEGE>Doon University</STU-COLLEGE>
+<STU-EMAIL> malvika@gmail.com </STU-EMAIL>
+</CS>
+<CS>
+<STU-NAME> Alisha Singh</STU-NAME>
+<STU-BRANCH>CS</STU-BRANCH>
+<STU-COLLEGE> Indore University</STU-COLLEGE>
+<STU-EMAIL> alisha@gmail.com </STU-EMAIL>
+</CS>
+</CHRIST>

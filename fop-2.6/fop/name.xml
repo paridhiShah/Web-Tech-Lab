@@ -1,0 +1,21 @@
+<CollectionOfItems>
+<items>
+<title Id="Participant ID" name="NAME" gender="GENDER" age="AGE"/>
+<title Id="Participant101" name="Divyank Singh detailsikarwar" gender="Female" age="23"/>
+<title Id="Participant102" name="Aniket Chauhan" gender="Female" age="23"/>
+<title Id="Participant103" name="Clayton Lynch" gender="Female" age="21"/>
+</items>
+
+<items>
+<title ID="Event ID" Name="NAME" />
+<title ID="Event101" Name="Badminton"/>
+<title ID="Event102" Name="Tennis" />
+<title ID="Event103" Name="Swimming"/>
+</items>
+<items>
+<title id="Location ID" nname="NAME" ngender="Date"/>
+<title id="Location101" nname="Sai g1" ngender="12 dec 2021"/>
+<title id="Location102" nname="Sai g2" ngender="12 dec 2021"/>
+<title id="Location103" nname="Sai g3" ngender="14 dec 2021"/>
+</items>
+</CollectionOfItems>
